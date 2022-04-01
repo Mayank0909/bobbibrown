@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #navbar {
+            width: 100%;
+            height: 96.92px;
+            background-color: black;
+            line-height: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .nav_logo {
+            width: 345px;
+            height: 38px;
+            margin: auto;
+        }
+
+        .nav_logo>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .nav-left {
+            display: flex;
+            width: 110px;
+            height: 30px;
+            font-size: 11px;
+            color: white;
+            padding: 3px 7px 0px 0px;
+            justify-content: flex-start;
+
+        }
+
+        .nav-right {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .nav-right>img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .banner1 {
+            height: 48.5px;
+            background: #000;
+            color: #fff;
+            display: flex;
+            margin: auto;
+            padding-bottom: 10px;
+        }
+
+        #banner_search {
+            height: 18px;
+            width: 20px;
+            margin-right: 4px;
+            justify-content: center;
+            margin-top: 15px;
+
+        }
+
+        .banner1_left {
+            width: 160px;
+            height: 35px;
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid white;
+            margin-left: 80px;
+            font-size: 14px;
+        }
+
+        .banner1_right {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            margin: auto;
+            margin-right: 120px;
+        }
+
+        .banner1_right>div {
+            margin-left: 20px;
+            font-size: 14px;
+
+        }
+
+        .banner1_right>div:hover {
+            text-decoration: underline;
+        }
+
+        .poster1 {
+            display: flex;
+            width: 100%;
+            height: 426.66px;
+            flex-direction: column;
+            background-color: royalblue;
+            margin-bottom: 100px;
+        }
+
+        .livechat {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .livechat>div {
+            width: 266px;
+            height: 522px;
+            padding: 0 1%;
+            text-align: left;
+
+        }
+
+        .livechat-img>img {
+            width: 239px;
+            height: 239px;
+            padding: 0 0 15px;
+            margin: auto;
+        }
+
+        .livechat-button {
+            text-decoration: underline;
+            font-size: 14px
+        }
+
+        .footer {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            height: 421px;
+            margin: 30px 0px 0px 0px;
+            width: 100%;
+
+        }
+
+        .footer-left {
+            width: 384px;
+            height: 381px;
+            background-color: black;
+            padding: 0px 20px 0px 25px;
+            color: white;
+            font-size: 14px;
+
+
+        }
+
+        .footer-country-button {
+            color: white;
+            font-size: 14px;
+            border: 1px solid white;
+            background: black;
+            margin: 0px 0px 25px;
+            padding: 10px 15px 10px 40px;
+            text-align: center;
+
+
+        }
+
+        .footer-right {
+            width: 512px;
+            height: 381px;
+            padding: 0px 20px 0px 25px;
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer-title {
+            font-size: 16px;
+            font-weight: bolder;
+        }
+
+        .footer-text {
+            font-size: 15px;
+        }
+
+        .footer-form {
+            width: 467px;
+            height: 214px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-form-how {
+            text-decoration: underline;
+        }
+
+        .footer-email {
+            width: 275px;
+            height: 45px;
+
+            margin: 0px 0px 15px;
+            padding: 0px 18px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+
+        }
+
+        .footer-submit {
+            width: 82px;
+            height: 45px;
+            background-color: black;
+            border: 1px solid white;
+            color: white;
+            padding: 0px 11px;
+        }
+
+        .footer-logo-div {
+            width: 467px;
+            height: 77px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+
+        }
+
+
+        .footer-logo-div>div>img {
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .footer-last {
+            color: white;
+            display: flex;
+            height: 100px;
+            background-color: black;
+            margin-top: -18px;
+
+        }
+
+        .footer-last-left {
+            width: 400px;
+            margin-right: 300px;
+            justify-content: left;
+            margin-top: 20px;
+        }
+
+        .footer-last-right {
+            width: 300px;
+            height: 100px;
+            text-align: left;
+        }
+
+        .footer-last-right1>p {
+            margin-right: 20px;
+        }
+
+        .footer-last-right1 {
+            display: flex;
+        }
+
+        .footer-last-right2 {
+            width: 300px;
+            height: 100px;
+            display: flex;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <div class="nav-left">EMAIL SIGNUP</div>
+        <div><img class="nav_logo" src="https://m.bobbibrowncosmetics.com/media/export/cms/logo.png"></img></div>
+        <div class="nav-right">
+            <img src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Location-White.svg"
+                alt=""><img
+                src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/MyAccount-White.svg"
+                alt=""><img src="https://www.bobbibrown.in/sites/bobbibrown/themes/bb_base/img/icons/svg/Bag-White.svg"
+                alt="">
+        </div>
+
+    </div>
+    <div class="banner1">
+        <div class="banner1_left">
+            <a href="index.html">
+                <img id="banner_search"
+                    src="https://www.bobbibrowncosmetics.com/sites/bobbibrown/themes/bb_base/img/icons/svg/Search-White.svg"
+                    alt="img" /></a>
+            <p>SEARCH</p>
+        </div>
+        <div class="banner1_right">
+            <div>NEW</div>
+            <div>BESTSELLER</div>
+            <div>FACE</div>
+            <div>MAKEUP</div>
+            <div>SKINCARE</div>
+            <div>VIRTUAL SERVICES</div>
+            <div>DISCOVER</div>
+        </div>
+
+    </div>
+    <div class="poster1">
+        <img src="https://www.bobbibrown.in/media/export/cms/SS22_SLWWF_VEFB_Medium_pc.jpg" alt="">
+
+    </div>
+    <p>hdedjde</p>
+    <p>ekejke</p>
+    <button class="shop_button">Shop Now</button>
+    <div class="livechat">
+        <div>
+            <div class="livechat-img">
+                <img src="https://www.bobbibrown.in/media/export/cms/Live-Chat_500x500.jpg" alt="">
+            </div>
+            <h4>LIVE CHAT</h4>
+            <p>Chat with a makeup artist to get product recommendations.</p>
+            <p class="livechat-button">Chat Now</p>
+        </div>
+
+        <div>
+            <div class="livechat-img">
+                <img src="https://www.bobbibrown.in/media/export/cms/Samples_500x500.jpg" alt="">
+            </div>
+            <h4> SAMPLE ON EVERY PURCHASE</h4>
+            <p>Select a free sample at checkout with any order*</p>
+            <p class="livechat-button">Shop Now</p>
+        </div>
+        <div>
+            <div class="livechat-img">
+                <img src="https://www.bobbibrown.in/media/export/cms/Shipping-&-Returns_500x500.jpg" alt="">
+            </div>
+            <h4>FREE SHIPPING</h4>
+            <p>Get your favorites delivered straight
+                to your door - every shipment on us
+            </p>
+            <p class="livechat-button">Shop Now</p>
+        </div>
+        <div>
+            <div class="livechat-img">
+                <img src="https://www.bobbibrown.in/media/export/cms/Virtual-Consults_500x500.jpg" alt="">
+            </div>
+            <h4>VIRTUAL CONSULTATION</h4>
+            <P>Get personalized recommendation on
+                our bestsellers with Virtual
+                Artistry Consultations</P>
+            <p class="livechat-button">Book Now</p>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <p class="footer-title">NEED HELP?</p>
+            <div class="footer-text">
+                <p>Email Customer Services</p>
+                <p>Call Us</p>
+                <p>Shipping & Return Policy</p>
+                <p>FAQS</p>
+                <p>Careers</p>
+            </div>
+            <p><span>English </span><span>|</span> <span>Hindi</span></p>
+            <select class="footer-country-button" name="Country" id="">
+                s-country-select selectBox" aria-label="Choose Country" style="display: none;">
+                <option value="/">CHOOSE LOCATION</option>= $0
+                <option value="http://www.bobbibrown.com.ar">Argentina</option>
+                <option value="http://www.bobbibrown.com.au">Australia</option>
+                <option value="http://www.bobbibrown.at">Austria</option>
+                <option value="http://www.bobbibrowncosmetics.ca">Canada</option> CONSE
+                <option value="http://www.bobbibrown.cl">Chile</option>
+                <option value="http://www.bobbibrown.com.cn">China</option>
+                <option value="http://www.bobbibrowncosmetics.fr">France</option>
+                <option value="http://www.bobbibrown.de">Germany</option>
+                <option value="https://www.bobbibrown.gr/">Greece</option>
+                <option value="http://www.bobbibrown.com.hk">Hong Kong, SAR of China</option>
+                <option value="https://www.bobbibrown.co.il">Israel</option>
+                <option value="https://www.bobbibrown.it/">Italy</option>
+                <option value="http://www.bobbibrown.co.jp">Japan</option>
+                <option value="http://www.bobbibrown.com.my">Malaysia</option>
+                <option value="http://www.bobbibrown.com.mx">Mexico</option>
+                <option value="http://www.bobbibrown-me.com">Middle East</option>
+                <option value="http://www.bobbibrown.nl">Netherlands</option>
+                <option value="https://www.bobbibrown.com.ph/">Philippines</option>
+                <option value="http://www.bobbibrown.pl/">Poland</option>
+                <option value="http://www.bobbibrown.ru/">Russia</option>
+                <option value="http://www.bobbibrown.com.sg/">Singapore</option>
+                <option value="http://www.bobbibrown.co.kr/">South Korea</option>
+                <option value="http://www.bobbibrown.es">Spain</option>
+            </select>
+        </div>
+        <div class="footer-left">
+            <p class="footer-title">MY BOBBI BROWN</p>
+            <div class="footer-text">
+                <p>My Acccount</p>
+                <p>My Order</p>
+                <p>Store Locator</p>
+            </div>
+        </div>
+        <div class="footer-right">  
+            <div class="footer-form">
+                <input class="footer-email" type="email" placeholder="ENTER YOUR EMAIL">
+                <input class="footer-email" type="phone" placeholder="ENTER YOUR MOBILE PHONE">
+                <p class="footer-form-how">How Do We Use Your Data?</p>
+                <input class="footer-submit" type="submit">
+
+            </div>
+            <h3 class="follow">FOLLOW US</h3>
+            <div class="footer-logo-div">
+                <div><img src="https://icones.pro/wp-content/uploads/2021/02/facebook-icones.png" alt=""></div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLvfQVYiX_DviWv9d3CRIvLHCQ6oZorfdNYQ&usqp=CAU"
+                        alt=""></div>
+                <div><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTseQwxV9pzXhChqI1cik21xBEBWQSTQfKIIA&usqp=CAU"
+                        alt=""></div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <div class="footer-last">
+        <div class="footer-last-left ">
+            © Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.
+            Sold by Shoppers Stop Ltd.</div>
+
+        <div class="footer-last-right">
+            <div class="footer-last-right1">
+                <p>Terms and Condition</p>
+                <p> Terms of Use</p>
+            </div>
+            <div class="footer-last-right2"> Privacy and Cookies Policy</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

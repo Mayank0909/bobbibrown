@@ -61,10 +61,9 @@
             padding-bottom: 10px;
         }
 
-        .banner1_right>div>a:hover {
+        .banner1_right>a {
             text-decoration: none;
-            color: white;
-            cursor: pointer;
+
         }
 
         #banner_search {
@@ -100,18 +99,13 @@
 
         }
 
-        .banner1_right>div:hover {
-            text-decoration: underline;
+        .banner1_right>div>a {
+
+            text-decoration: none;
+            color: white;
         }
 
-        .poster1 {
-            display: flex;
-            width: 100%;
-            height: 426.66px;
-            flex-direction: column;
-            background-color: royalblue;
-            margin-bottom: 100px;
-        }
+
 
         .livechat {
             display: flex;
@@ -173,6 +167,8 @@
             margin: 0px 0px 25px;
             padding: 10px 15px 10px 40px;
             text-align: center;
+
+
         }
 
         .footer-right {
@@ -277,6 +273,40 @@
             display: flex;
             text-align: left;
         }
+
+        .poster {
+            width: 100%;
+            height: 400px;
+            position: relative;
+        }
+
+        .poster>div>img {
+            width: 100%;
+            height: 400px;
+        }
+
+        .poster>div:nth-child(2) {
+            position: absolute;
+            top: 60%;
+            left: 30%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .poster>div>h1 {
+            text-transform: uppercase;
+        }
+
+        .shopNow {
+            background-color: black;
+            padding: 2% 5%;
+            border-radius: 3px;
+            color: rgb(248, 248, 248);
+            margin: auto;
+        }
     </style>
 </head>
 
@@ -312,13 +342,17 @@
         </div>
 
     </div>
-    <div class="poster1">
-        <img src="https://www.bobbibrown.in/media/export/cms/SS22_SLWWF_VEFB_Medium_pc.jpg" alt="">
+    <div class="poster">
+        <div>
+            <img src="https://www.bobbibrown.in/media/export/cms/SS22_SLWWF_VEFB_Medium_pc.jpg" alt="">
+        </div>
+        <div>
+            <h1>Its Bestseller For A Reason</h1>
+            <buttob class="shopNow">Shop Now</buttob>
+        </div>
 
     </div>
-    <p>hdedjde</p>
-    <p>ekejke</p>
-    <button class="shop_button">Shop Now</button>
+
     <div class="livechat">
         <div>
             <div class="livechat-img">

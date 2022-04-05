@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<style>
+		* {
+			font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+				Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+		}
+
+		.header {
+			position: relative;
+			height: 60px;
+			justify-content: space-around;
+			margin-left: -10px;
+			box-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+			z-index: 10;
+			background-color: white;
+			font-size: 12px;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		.headdiv1 {
+			display: flex;
+			justify-content: space-around;
+			width: 750px;
+			height: 24px;
+			align-items: center;
+			margin-right: 10%;
+		}
+
+		.headdiv1>div>a {
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		.headdiv1>div>a :hover {
+			text-decoration: none;
+			color: black;
+			cursor: pointer;
+		}
+
+		.headdiv2 {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			width: 150px;
+			height: 21px;
+			margin-right: 2%;
+		}
+
+		.headdiv2>div:nth-child(1)>a>img {
+			width: 20px;
+			height: 20px;
+		}
+
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		.textc {
+			text-align: center !important;
+		}
+
+		.marg {
+			margin: auto;
+		}
+
+		.alignc {
+			align-items: center;
+		}
+
+		.dflex {
+			display: flex;
+			align-items: center;
+		}
+
+		.nav-logo {
+			position: absolute;
+			align-content: flex-start;
+			transform: translateX(-50%);
+		}
+
+		.shopdiv {
+			display: flex;
+			margin: auto;
+			margin-top: 80px;
+			justify-content: space-between;
+		}
+
+		.checkbut {
+			padding: 12px 50px;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			font-size: 13px;
+			font-weight: bolder;
+			margin-left: 10px;
+		}
+
+		.checkbut>a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.cartp {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			text-decoration: underline;
+		}
+
+		#container {
+			width: 90%;
+			margin: 2% auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.cont-heading {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 20% 30% 17% 16% 17%;
+			justify-items: start;
+			border-bottom: 4px solid rgb(238, 238, 240);
+			padding-bottom: 10px;
+		}
+
+		.cont-items {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 20% 30% 17% 16% 17%;
+			justify-items: start;
+			border-bottom: 4px solid rgb(238, 238, 240);
+			padding-bottom: 10px;
+		}
+
+		.cont-items>div:nth-child(1) {
+			width: 100%;
+
+			margin: 1% auto;
+			padding: 1% 1%;
+		}
+
+		.cont-items>div:nth-child(1)>img {
+			width: 80%;
+			height: 150px;
+			margin: 1% auto;
+			padding: 2% 1%;
+		}
+
+		.total {
+			width: 90%;
+			box-sizing: border-box;
+			padding: 1% 2.5%;
+			margin: auto;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		.sub-total {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.sub-total>h3 {
+			margin-bottom: 6px;
+		}
+
+		#t-price {
+			margin-top: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="shopdiv">
+		<div>
+			<h1>Shopping Cart</h1>
+		</div>
+		<div class="cartp">
+			<p>Continue shopping</p>
+			<button class="checkbut">
+				<a href="./signup.html">Checkout</a>
+			</button>
+		</div>
+	</div>
+
+	<div id="container">
+		<div class="cont-heading">
+			<div></div>
+			<div>Description</div>
+			<div>Unit Price</div>
+			<div>Quantity</div>
+			<div>Price</div>
+		</div>
+	</div>
+
+	<div class="total">
+		<div class="sub-total">
+			<h3>Subtotal</h3>
+			<p id="t-price"></p>
+		</div>
+	</div>
+</body>
+
+</html>
+
+<script src="./cart.js"></script>
